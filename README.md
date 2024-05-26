@@ -12,14 +12,22 @@ Este projeto foi desenvolvido como parte do Checkpoint 03 da aula "DESENVOLVIMEN
 - Avaliar filmes assistidos com estrelas.
 - Visualizar a quantidade total de filmes assistidos.
 
-## Tecnologias Utilizadas
+# Tecnologias Utilizadas
 
-- [Flutter](https://flutter.dev/) - Framework para desenvolvimento de aplicativos.
-- [Dart](https://dart.dev/) - Linguagem de programação.
-- [path_provider](https://pub.dev/packages/path_provider) - Plugin Flutter para acessar o sistema de arquivos.
+NaluBoxd é construído utilizando as seguintes tecnologias:
 
-## Instalação
+- **Flutter:** Flutter é um framework de UI open-source criado pelo Google. Ele permite o desenvolvimento de aplicativos móveis multiplataforma de alta qualidade para iOS e Android a partir de uma única base de código.
 
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/naluBoxd.git
+- **Dart:** Dart é a linguagem de programação utilizada no desenvolvimento de aplicativos Flutter. Ela é uma linguagem moderna, orientada a objetos e de tipagem estática, desenvolvida pelo Google.
+
+- **Material Design:** Material Design é um sistema de design desenvolvido pelo Google que ajuda os desenvolvedores a criar interfaces de usuário bonitas e funcionais seguindo princípios de design consistentes.
+
+- **Flutter Packages:** O projeto faz uso de diversos pacotes Flutter disponíveis no pub.dev para adicionar funcionalidades específicas, como gerenciamento de rotas, ícones, e linting.
+
+# Instalação
+
+1. Clone este repositório: `git clone https://github.com/seu-usuario/nalu-boxd.git`
+2. Entre no diretório do projeto: `cd nalu-boxd`
+3. Instale as dependências: `flutter pub get`
+4. Execute o aplicativo: `flutter run`
+luBoxd.git
