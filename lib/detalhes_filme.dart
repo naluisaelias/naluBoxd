@@ -39,7 +39,7 @@ class DetalhesFilmePage extends StatelessWidget {
                           ? Icons.star
                           : Icons.star_border,
                       size: 30.0,
-                      color: Color(0xFF653635),
+                      color: const Color(0xFF653635),
                     );
                   }),
                 ),
