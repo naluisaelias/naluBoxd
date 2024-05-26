@@ -3,7 +3,7 @@ import 'filme.dart';
 import 'detalhes_filme.dart';
 
 void main() {
-    runApp(const MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -23,7 +23,6 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -185,8 +184,7 @@ class _FilmesListState extends State<FilmesList> {
         Expanded(
           child: ListView.separated(
             itemCount: widget.filmes.length,
-            separatorBuilder: (BuildContext context, int index) =>
-                const Divider(
+            separatorBuilder: (BuildContext context, int index) => const Divider(
               color: Color(0xFFDEB3AD),
             ),
             itemBuilder: (BuildContext context, int index) {
@@ -203,15 +201,16 @@ class _FilmesListState extends State<FilmesList> {
                       arguments: widget.filmes[index],
                     );
                   },
-                  child: Container(
-                    width: 50,
-                    height: 75,
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                        image: AssetImage(widget.filmes[index].poster),
-                        fit: BoxFit.cover,
+                  child: AspectRatio(
+                    aspectRatio: 2 / 3,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage(widget.filmes[index].poster),
+                          fit: BoxFit.cover,
+                        ),
+                        borderRadius: BorderRadius.circular(10.0),
                       ),
-                      borderRadius: BorderRadius.circular(10.0),
                     ),
                   ),
                 ),
@@ -285,7 +284,7 @@ class _FilmesListState extends State<FilmesList> {
                           widget.filmes[index].assistido
                               ? Icons.check_circle_rounded
                               : Icons.check_circle_outline_rounded,
-                          color: Color(0xFFDEB3AD),
+                          color: const Color(0xFFDEB3AD),
                         ),
                         onPressed: () {
                           setState(() {
@@ -319,4 +318,3 @@ class _FilmesListState extends State<FilmesList> {
     );
   }
 }
-
