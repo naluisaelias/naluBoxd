@@ -3,11 +3,11 @@ import 'filme.dart';
 import 'detalhes_filme.dart';
 
 void main() {
-  runApp(const MyApp());
+    runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -24,6 +24,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
+
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
@@ -35,7 +36,7 @@ class HomePage extends StatelessWidget {
         diretor: "Sam Wrench",
         ano: 2023,
         sinopse:
-            "Taylor Swift: The Eras Tour is the recording of shows from The Eras Tour, performed by the global phenomenon Taylor Swift. The singer released her first album in 6, while still associated with the Big Machine Records label. The film documents three of Swift's performances at SoFi Stadium during the 2023/2024 world tour - her sixth overall. Directed by Sam Wrench and produced by the singer herself, the film set a record of 37 million in its first day of pre-sales in the United States. The show lasts more than three hours and features a setlist of 44 songs.",
+            "Taylor Swift: The Eras Tour é a gravação dos shows da The Eras Tour, performada pelo fenômeno mundial Taylor Swift. A cantora lançou seu primeiro álbum em 2006, enquanto ainda estava associada à gravadora Big Machine Records. O filme documenta três apresentações de Swift no SoFi Stadium, durante a turnê mundial de 2023/2024 - sexta na carreira de Taylor. Com direção de Sam Wrench e produção da própria cantora, o longa bateu o recorde de 37 milhões de dólares em seu primeiro dia de pré-vendas nos Estados Unidos. O show possui mais de três horas de duração, e conta com um setlist formado por 44 músicas.",
         poster: "assets/images/TaylorSwift_TheErasTour.png",
         assistido: false,
         avaliacao: 0,
@@ -152,8 +153,8 @@ class HomePage extends StatelessWidget {
             Text(
               'naluBoxd',
               style: TextStyle(
+                fontFamily: 'LemonMilk',
                 color: Color(0xFFF9F1F0),
-                fontWeight: FontWeight.bold,
               ),
             ),
           ],
@@ -309,7 +310,7 @@ class _FilmesListState extends State<FilmesList> {
             style: const TextStyle(
               fontSize: 16.0,
               fontWeight: FontWeight.bold,
-              color: Color(0xFF653635),
+              color: Color(0xFFDEB3AD),
             ),
           ),
         ),
@@ -317,3 +318,4 @@ class _FilmesListState extends State<FilmesList> {
     );
   }
 }
+
