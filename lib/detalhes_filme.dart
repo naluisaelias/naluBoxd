@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'filme.dart';
 
 class DetalhesFilmePage extends StatelessWidget {
-  const DetalhesFilmePage({Key? key}) : super(key: key);
+  const DetalhesFilmePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +23,7 @@ class DetalhesFilmePage extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               SizedBox(height: MediaQuery.of(context).size.height * 0.02), // Espaço proporcional
-              Container(
+              SizedBox(
                 width: MediaQuery.of(context).size.width * 0.7,
                 child: const Divider(
                   color: Color(0xFF653635),
