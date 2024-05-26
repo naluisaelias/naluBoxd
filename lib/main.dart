@@ -135,19 +135,19 @@ class HomePage extends StatelessWidget {
             Icon(
               Icons.circle,
               color: Color(0xFFF9F1F0),
-              size: 16,
+              size: 18,
             ),
             SizedBox(width: 4),
             Icon(
               Icons.circle,
               color: Color(0xFFDB959B),
-              size: 16,
+              size: 18,
             ),
             SizedBox(width: 4),
             Icon(
               Icons.circle,
               color: Color(0xFFF9F1F0),
-              size: 16,
+              size: 18,
             ),
             SizedBox(width: 8),
             Text(
@@ -265,7 +265,7 @@ class _FilmesListState extends State<FilmesList> {
                       widget.filmes[index].diretor,
                       style: const TextStyle(
                         color: Colors.grey,
-                        fontSize: 14.0,
+                        fontSize: 15.0,
                       ),
                     ),
                     Text(
