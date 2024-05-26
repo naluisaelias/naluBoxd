@@ -30,4 +30,3 @@ NaluBoxd é construído utilizando as seguintes tecnologias:
 2. Entre no diretório do projeto: `cd nalu-boxd`
 3. Instale as dependências: `flutter pub get`
 4. Execute o aplicativo: `flutter run`
-luBoxd.git
