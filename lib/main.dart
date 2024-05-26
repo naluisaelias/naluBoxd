@@ -128,7 +128,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color(0xFF653635),
-        toolbarHeight: 65,
+        toolbarHeight: 75,
         title: const Row(
           children: [
             Icon(
@@ -154,7 +154,7 @@ class HomePage extends StatelessWidget {
               style: TextStyle(
                 fontFamily: 'LemonMilk',
                 color: Color(0xFFF9F1F0),
-                fontSize: 25,
+                fontSize: 30,
               ),
             ),
           ],
@@ -204,12 +204,13 @@ class _FilmesListState extends State<FilmesList> {
                   child: AspectRatio(
                     aspectRatio: 2 / 3,
                     child: Container(
+
                       decoration: BoxDecoration(
                         image: DecorationImage(
                           image: AssetImage(widget.filmes[index].poster),
                           fit: BoxFit.cover,
                         ),
-                        borderRadius: BorderRadius.circular(10.0),
+                        borderRadius: BorderRadius.circular(6.0),
                       ),
                     ),
                   ),
