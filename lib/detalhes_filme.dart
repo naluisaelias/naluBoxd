@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'filme.dart';
 
 class DetalhesFilmePage extends StatelessWidget {
-  const DetalhesFilmePage({Key? key});
+  const DetalhesFilmePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -25,24 +25,29 @@ class DetalhesFilmePage extends StatelessWidget {
               SizedBox(height: MediaQuery.of(context).size.height * 0.02), // Espaço proporcional
               Container(
                 width: MediaQuery.of(context).size.width * 0.7,
-                child: Divider(
+                child: const Divider(
                   color: Color(0xFF653635),
                   thickness: 2,
                 ),
               ),
               const SizedBox(height: 16),
-              Image.network(
-                filme.poster,
+              Container(
                 width: 180,
                 height: 270,
-                fit: BoxFit.cover,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(5.0),
+                  image: DecorationImage(
+                    image: AssetImage(filme.poster),
+                    fit: BoxFit.cover,
+                  ),
+                ),
               ),
               if (filme.assistido)
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 16),
                   child: Column(
                     children: [
-                      Text(
+                      const Text(
                         'AVALIAÇÃO',
                         style: TextStyle(
                           fontSize: 15,
