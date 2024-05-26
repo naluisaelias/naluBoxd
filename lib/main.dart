@@ -184,15 +184,12 @@ class _FilmesListState extends State<FilmesList> {
         Expanded(
           child: ListView.separated(
             itemCount: widget.filmes.length,
-            separatorBuilder: (BuildContext context, int index) => const Divider(
+            separatorBuilder: (BuildContext context, int index) =>
+                const Divider(
               color: Color(0xFFDEB3AD),
             ),
             itemBuilder: (BuildContext context, int index) {
               return ListTile(
-                contentPadding: const EdgeInsets.symmetric(
-                  vertical: 8.0,
-                  horizontal: 16.0,
-                ),
                 leading: GestureDetector(
                   onTap: () {
                     Navigator.pushNamed(
@@ -201,17 +198,14 @@ class _FilmesListState extends State<FilmesList> {
                       arguments: widget.filmes[index],
                     );
                   },
-                  child: AspectRatio(
-                    aspectRatio: 2 / 3,
-                    child: Container(
-
-                      decoration: BoxDecoration(
-                        image: DecorationImage(
-                          image: AssetImage(widget.filmes[index].poster),
-                          fit: BoxFit.cover,
-                        ),
-                        borderRadius: BorderRadius.circular(6.0),
+                  child: Container(
+                    width: 30,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage(widget.filmes[index].poster),
+                        fit: BoxFit.fill,
                       ),
+                      borderRadius: BorderRadius.circular(6.0),
                     ),
                   ),
                 ),
