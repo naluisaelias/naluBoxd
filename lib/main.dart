@@ -155,6 +155,7 @@ class HomePage extends StatelessWidget {
               style: TextStyle(
                 fontFamily: 'LemonMilk',
                 color: Color(0xFFF9F1F0),
+                fontSize: 25,
               ),
             ),
           ],
@@ -210,7 +211,7 @@ class _FilmesListState extends State<FilmesList> {
                         image: AssetImage(widget.filmes[index].poster),
                         fit: BoxFit.cover,
                       ),
-                      borderRadius: BorderRadius.circular(8.0),
+                      borderRadius: BorderRadius.circular(10.0),
                     ),
                   ),
                 ),
@@ -228,8 +229,7 @@ class _FilmesListState extends State<FilmesList> {
                         child: Text(
                           widget.filmes[index].nome,
                           style: const TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 16.0,
+                            fontSize: 18.0,
                           ),
                         ),
                       ),
@@ -309,7 +309,8 @@ class _FilmesListState extends State<FilmesList> {
             'Você assistiu $contAssistidos de ${widget.filmes.length} filmes.',
             style: const TextStyle(
               fontSize: 16.0,
-              fontWeight: FontWeight.bold,
+              fontFamily: "LemonMilk",
+              fontWeight: FontWeight.w100,
               color: Color(0xFFDEB3AD),
             ),
           ),
