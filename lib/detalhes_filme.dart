@@ -22,7 +22,7 @@ class DetalhesFilmePage extends StatelessWidget {
                 style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                 textAlign: TextAlign.center,
               ),
-              SizedBox(height: MediaQuery.of(context).size.height * 0.02), // Espaço proporcional
+              SizedBox(height: MediaQuery.of(context).size.height * 0.02), 
               SizedBox(
                 width: MediaQuery.of(context).size.width * 0.7,
                 child: const Divider(

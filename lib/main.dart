@@ -118,8 +118,7 @@ class HomePage extends StatelessWidget {
           nome: "Frances Ha",
           diretor: "Noah Baumbach",
           ano: 2013,
-          sinopse:
-              "Frances divide um apartamento em Nova York com Sophie, sua melhor amiga. Brincalhona e com ar de quem não deseja crescer, ela recusa o convite do namorado para que more com ele justamente para não deixar Sophie sozinha. Entretanto, a amiga não toma a mesma atitude quando surge a oportunidade de se mudar para um apartamento melhor localizado, mesmo que isto signifique que ela e Frances passem a morar em locais diferentes. A partir de então tem início a peregrinação de Frances em busca de um novo lugar que se adeque às suas finanças, já que ela é apenas aluna em uma companhia de dança à espera de uma chance de integrar o grupo de bailarinos que encenará o espetáculo de Natal. Mesmo diante das dificuldades, Frances tenta manter o alto astral diante os problemas que a vida adulta traz.",
+          sinopse: "Frances se joga de cabeça em seus sonhos, mesmo que a realidade possível seja bem pobre. Ela quer muito mais do que tem e leva a vida com uma alegria inexplicável e muita leveza.",
           poster: "assets/images/FrancesHa.jpg",
           assistido: false,
           avaliacao: 0),
